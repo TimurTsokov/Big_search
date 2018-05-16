@@ -1,0 +1,147 @@
+* {
+
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 2vh Arial, sans-serif;
+  background: #f1f1f1;
+  color: rgba(145, 145, 145, 0.7);
+  padding-top: 3%;
+}
+
+header {
+  padding-bottom: 3%;
+}
+
+header, main {
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  padding-left: 10%;
+}
+
+.search-form {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+
+div {
+  display: inline-block;
+}
+
+div.first,
+div.second,
+div.third {
+  width: 30%;
+  margin: 0 10px;
+
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0 80px 0 10px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  font-size: 100px;
+  color: #ec5a62;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: #C2C2C2;
+}
+
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="button"] {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  text-indent: 100px;
+  overflow: hidden;
+  right: 0;
+  top: 50%;
+  background: transparent url(img/search.svg) no-repeat center center;
+  background-size: 100%;
+  border: none;
+  transform: translate3d(0, -50%, 0) scale(1);
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+  transition: all .3s ease-in;
+  transform: translate3d(0, -50%, 0) scale(1.5);
+  cursor: pointer;
+  outline: none;
+}
+
+span {
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #c2c2c2;
+}
+
+ul {
+  padding: 0;
+  margin: 5% 10% 5% 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  padding: 13px;
+  display: block;
+  margin: 7px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(118, 117, 128, 0.05);
+  color: rgba(145, 145, 145, 0.7);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul li a:hover,
+ul li a:hover {
+  color: #EC5A62;
+  background: rgba(118, 117, 128, 0.1);
+}
+
+ul img {
+  display: inline-block;
+  width: 50px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+ul h3 {
+  vertical-align: middle;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+  width: calc(100% - 70px);
+  color: inherit;
+}
+
+.first .first-list img {
+  border-radius: 50%;
+  overflow: hidden;
+}
